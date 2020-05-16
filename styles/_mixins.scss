@@ -21,3 +21,7 @@ $menu_color: #0000EC;
     font-size: $size;
     line-height: $line;
 }
+
+@function vw($pixeles, $view_width) {
+    @return #{$pixeles/$view_width*100}vw;
+}

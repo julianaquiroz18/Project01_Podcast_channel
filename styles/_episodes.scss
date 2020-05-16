@@ -1,0 +1,38 @@
+.main_section-episodes {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_section-episodes-title {
+    @include font(36, 42);
+    margin: 64 0 21 vw(16, 320);
+}
+
+.main_section-episodes-iframe_container {
+    flex-direction: column;
+    margin: 0 vw(11, 320) vw(132.5, 320);
+    & div {
+        margin-bottom: 11px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main_section-episodes-title {
+        @include font(48, 62);
+        margin: vw(186, 1440) 0 vw(26, 1440) vw(200, 1440);
+    }
+    .main_section-episodes-iframe_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin: 0 vw(100, 1440) vw(232.6, 1440);
+        height: vw(536, 1440);
+        & div {
+            margin-bottom: 0;
+            width: vw(584, 1440);
+            height: vw(232, 1440);
+        }
+    }
+}

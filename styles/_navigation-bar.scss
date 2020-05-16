@@ -1,14 +1,14 @@
 .navigation-bar {
-    background: url(../images/logo.svg) no-repeat 16px 10px;
-    background-size: 24px 24px;
+    background: url(../images/logo.svg) no-repeat vw(16, 320) vw(10, 320);
+    background-size: vw(24, 320) vw(24, 320);
     position: relative;
-    height: 44px;
+    height: vw(44, 320);
 }
 
 .navigation-bar_checkbox-menu {
     position: absolute;
     margin: 0;
-    left: 87.5vw;
+    left: vw(281, 320);
     top: 13px;
     width: 25px;
     height: 20px;
@@ -21,7 +21,7 @@
 .navigation-bar_menu-line {
     display: block;
     position: relative;
-    left: 88.45vw;
+    left: vw(283, 320);
     top: 16px;
     width: 18px;
     height: 2px;
@@ -34,7 +34,7 @@
 
 .navigation-bar_menu {
     position: absolute;
-    top: 44px;
+    top: vw(44, 320);
     width: 100vw;
     list-style: none;
     background-color: $menu_color;
@@ -48,7 +48,7 @@
 .navigation-bar_menu_item {
     display: block;
     position: relative;
-    margin: 0px 0px 24px 16px;
+    margin: 0 0 24px vw(16, 320);
     text-decoration: none;
     color: #FFFFFF;
     @include second_font;
@@ -72,11 +72,11 @@
     transform: rotate(-45deg) translate(-3px, 1px);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .navigation-bar {
-        background-position: 100px 22px;
-        background-size: 36px 36px;
-        height: 80px;
+        background-position: vw(100, 1440) vw(22, 1440);
+        background-size: vw(36, 1440) vw(36, 1440);
+        height: vw(80, 1440);
     }
     .navigation-bar_checkbox-menu,
     .navigation-bar_menu-line {
@@ -86,13 +86,13 @@
         display: flex;
         justify-content: flex-end;
         top: inherit;
-        right: 100px;
+        right: vw(100, 1440);
         background-color: inherit;
         transform: initial;
         padding-top: 0;
     }
     .navigation-bar_menu_item {
-        margin: 26px 0px 26px 48px;
+        margin: vw(26, 1440) 0 vw(26, 1440) vw(48, 1440);
         color: $main_color;
         &:hover {
             color: $button_color;
