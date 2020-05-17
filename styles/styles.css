@@ -321,7 +321,7 @@ video {
 .main_section-episodes-title {
   font-size: 36px;
   line-height: 42px;
-  margin: 64 0 21 5vw;
+  margin: 64px 0 21px 5vw;
 }
 
 .main_section-episodes-iframe_container {
@@ -364,6 +364,73 @@ video {
     margin-bottom: 0;
     width: 40.55556vw;
     height: 16.11111vw;
+  }
+}
+
+.main_section-we {
+  position: relative;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.main_section-we-phone_image {
+  display: inline-block;
+  width: 100vw;
+  height: auto;
+}
+
+.main_section-we-tittle {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 27px 5vw 8px;
+}
+
+.main_section-we-content {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 5vw;
+}
+
+@media screen and (min-width: 1440px) {
+  .main_section-we {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    -ms-grid-columns: 13.88889vw 31.77778vw 4.33333vw 32.22222vw 17.77778vw;
+        grid-template-columns: 13.88889vw 31.77778vw 4.33333vw 32.22222vw 17.77778vw;
+    -ms-grid-rows: 13.125vw 4.30556vw 14.16667vw 14.23611vw;
+        grid-template-rows: 13.125vw 4.30556vw 14.16667vw 14.23611vw;
+  }
+  .main_section-we-phone_image {
+    width: 31.77778vw;
+    height: 45.83333vw;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1/2/6/3;
+  }
+  .main_section-we-tittle {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 0;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-area: 2/4/3/5;
+  }
+  .main_section-we-content {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 1.66667vw 0 0;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-area: 3/4/5/5;
   }
 }
 /*# sourceMappingURL=styles.css.map */
