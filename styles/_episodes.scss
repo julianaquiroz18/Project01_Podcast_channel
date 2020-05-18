@@ -1,11 +1,14 @@
 .main_section-episodes {
     display: flex;
     flex-direction: column;
+    background: $background_color;
+    clip-path: polygon( 0 3%, 100% 0, 100% 97%, 0 100%);
 }
 
 .main_section-episodes_title {
     @include font(36, 42);
     margin: 64px 0 21px vw(16, 320);
+    color: #FFFFFF;
 }
 
 .main_section-episodes_iframe-container {
@@ -17,6 +20,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .main_section-episodes {
+        clip-path: polygon( 0 15%, 100% 0, 100% 85%, 0 100%);
+    }
     .main_section-episodes_title {
         @include font(48, 62);
         margin: vw(186, 1440) 0 vw(26, 1440) vw(200, 1440);

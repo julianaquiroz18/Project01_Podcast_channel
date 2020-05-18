@@ -1,12 +1,15 @@
 .main_section-news {
     display: flex;
     flex-direction: column;
+    background: $background_color;
+    clip-path: polygon( 0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
 .main_section-news_title {
     @include font(36, 42);
     margin: 64px vw(16, 320) 36px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .main_section-news_button {
@@ -19,11 +22,14 @@
     @include second_font();
     @include font(16, 22);
     font-weight: 500;
-    color: $main_color;
     text-decoration: none;
+    color: $main_color;
 }
 
 @media screen and (min-width: 1440px) {
+    .main_section-news {
+        clip-path: polygon( 0 30%, 100% 0, 100% 100%, 0 100%);
+    }
     .main_section-news_title {
         @include font(48, 62);
         margin: vw(213, 1440) 0 36px;

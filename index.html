@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Podcast Channel</title>
@@ -18,10 +17,10 @@
             <span class="navigation-bar_menu-line"></span>
             <span class="navigation-bar_menu-line"></span>
             <ul class="navigation-bar_menu">
-                <li><a href="#" class="navigation-bar_menu_item">EPISODIOS</a></li>
-                <li><a href="#" class="navigation-bar_menu_item">NOSOTROS</a></li>
-                <li><a href="#" class="navigation-bar_menu_item">ENTREVISTAS</a></li>
-                <li><a href="#" class="navigation-bar_menu_item">TÓPICOS</a></li>
+                <li><a href="#episodes" class="navigation-bar_menu_item">EPISODIOS</a></li>
+                <li><a href="#we" class="navigation-bar_menu_item">NOSOTROS</a></li>
+                <li><a href="#interviews" class="navigation-bar_menu_item">ENTREVISTAS</a></li>
+                <li><a href="#topics" class="navigation-bar_menu_item">TÓPICOS</a></li>
             </ul>
         </nav>
         <div class="header_container">
@@ -30,11 +29,11 @@
                 <span class="header_subtitle-mobile">Un podcast que explora el mundo de la programación.</span>
                 <span class="header_subtitle-desktop">El portal de podcasts que explora el mundo de la programación y la tecnología.</span> Nuevos episodios, todos los jueves cada 15 días.
             </p>
-            <a class="header_button" href="">CONOCÉ MÁS</a>
+            <a class="header_button" href="#topics">CONOCÉ MÁS</a>
         </div>
     </header>
     <main class="main">
-        <section class="main_section-episodes">
+        <section class="main_section-episodes" id="episodes">
             <h2 class="main_section-episodes_title">Episodios</h2>
             <div class="main_section-episodes_iframe-container">
                 <div>
@@ -51,13 +50,13 @@
                 </div>
             </div>
         </section>
-        <section class="main_section-we">
+        <section class="main_section-we" id="we">
             <img class="main_section-we_phone-image" src="./images/phone.png" alt="phone">
             <h2 class="main_section-we_title">De dónde venimos</h2>
             <p class="main_section-we_content">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br><br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity,
                 in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
         </section>
-        <section class="main_section-interviews">
+        <section class="main_section-interviews" id="interviews">
             <h2 class="main_section-interviews_title">Invitadas/os estelares</h2>
             <div class="main_section-interviews_images-container">
                 <img class="main_section-interviews_image" src="./images/grace-hopper.png" alt="Grace-Hopper">
@@ -68,7 +67,7 @@
                 <img class="main_section-interviews_image" src="./images/susan-kare.png" alt="Susan-Kare">
             </div>
         </section>
-        <section class="main_section-topics">
+        <section class="main_section-topics" id="topics">
             <h2 class="main_section-topics_title">Algunos de nuestros temas</h2>
             <div class="main_section-topics_container">
                 <img src="./images/icon1.svg" alt="Icono-trabajo-remoto" class="main_section-topics_container_icon">
@@ -89,7 +88,7 @@
         </section>
         <section class="main_section-news">
             <h2 class="main_section-news_title">¿Querés las últimas novedades?</h2>
-            <a class="main_section-news_button" href="">ESCUCHÁ LOS EPISODIOS</a>
+            <a class="main_section-news_button" href="#episodes">ESCUCHÁ LOS EPISODIOS</a>
         </section>
     </main>
     <footer class="footer">

@@ -319,12 +319,16 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+          clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
 }
 
 .main_section-episodes_title {
   font-size: 36px;
   line-height: 42px;
   margin: 64px 0 21px 5vw;
+  color: #FFFFFF;
 }
 
 .main_section-episodes_iframe-container {
@@ -340,6 +344,10 @@ video {
 }
 
 @media screen and (min-width: 1440px) {
+  .main_section-episodes {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  }
   .main_section-episodes_title {
     font-size: 48px;
     line-height: 62px;
@@ -588,6 +596,9 @@ video {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
 .main_section-news_title {
@@ -595,6 +606,7 @@ video {
   line-height: 42px;
   margin: 64px 5vw 36px;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .main_section-news_button {
@@ -614,11 +626,15 @@ video {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  color: #060A24;
   text-decoration: none;
+  color: #060A24;
 }
 
 @media screen and (min-width: 1440px) {
+  .main_section-news {
+    -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  }
   .main_section-news_title {
     font-size: 48px;
     line-height: 62px;

@@ -2,7 +2,7 @@ $main_color: #060A24;
 $button_color: #00F3BB;
 $button_color_hover: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 $menu_color: #0000EC;
-// $desktop_background_color:
+$background_color: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 @mixin main_font {
     font-family: 'IBM Plex Sans', sans-serif;
 }
