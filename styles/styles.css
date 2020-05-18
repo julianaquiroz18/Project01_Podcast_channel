@@ -637,4 +637,49 @@ video {
     background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   }
 }
+
+.footer {
+  height: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 24px 0 16px;
+}
+
+.footer_icons-container {
+  width: 227px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    height: 95px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 6.94444vw;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
