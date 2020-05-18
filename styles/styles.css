@@ -254,20 +254,23 @@ video {
 }
 
 .header_button {
-  border: none;
   background-color: #00F3BB;
-  display: inline-block;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 48px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #060A24;
-}
-
-.header_button:focus {
-  outline: 0;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1440px) {
@@ -574,6 +577,64 @@ video {
   }
   .main_section-topics_container_description {
     margin-top: 16px;
+  }
+}
+
+.main_section-news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_section-news_title {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 64px 5vw 36px;
+  text-align: center;
+}
+
+.main_section-news_button {
+  background-color: #00F3BB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5vw 67px;
+  height: 48px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #060A24;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .main_section-news_title {
+    font-size: 48px;
+    line-height: 62px;
+    margin: 14.79167vw 0 36px;
+    text-align: center;
+  }
+  .main_section-news_button {
+    width: 23.95833vw;
+    height: 56px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto 151px;
+  }
+  .main_section-news_button:hover {
+    color: #FFFFFF;
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   }
 }
 /*# sourceMappingURL=styles.css.map */

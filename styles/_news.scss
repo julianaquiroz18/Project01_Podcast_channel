@@ -1,0 +1,42 @@
+.main_section-news {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_section-news_title {
+    @include font(36, 42);
+    margin: 64px vw(16, 320) 36px;
+    text-align: center;
+}
+
+.main_section-news_button {
+    background-color: $button_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 vw(16, 320) 67px;
+    height: 48px;
+    @include second_font();
+    @include font(16, 22);
+    font-weight: 500;
+    color: $main_color;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .main_section-news_title {
+        @include font(48, 62);
+        margin: vw(213, 1440) 0 36px;
+        text-align: center;
+    }
+    .main_section-news_button {
+        width: vw(345, 1440);
+        height: 56px;
+        @include font(18, 24);
+        margin: 0 auto 151px;
+        &:hover {
+            color: #FFFFFF;
+            background: $button_color_hover;
+        }
+    }
+}

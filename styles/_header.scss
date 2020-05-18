@@ -24,18 +24,16 @@
 }
 
 .header_button {
-    border: none;
     background-color: $button_color;
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 48px;
     @include second_font();
     @include font(16, 22);
     font-weight: 500;
     color: $main_color;
-    &:focus {
-        outline: 0;
-    }
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1440px) {
