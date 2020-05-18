@@ -3,12 +3,12 @@
     flex-direction: column;
 }
 
-.main_section-episodes-title {
+.main_section-episodes_title {
     @include font(36, 42);
     margin: 64px 0 21px vw(16, 320);
 }
 
-.main_section-episodes-iframe_container {
+.main_section-episodes_iframe-container {
     flex-direction: column;
     margin: 0 vw(11, 320) vw(132.5, 320);
     & div {
@@ -17,11 +17,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .main_section-episodes-title {
+    .main_section-episodes_title {
         @include font(48, 62);
         margin: vw(186, 1440) 0 vw(26, 1440) vw(200, 1440);
     }
-    .main_section-episodes-iframe_container {
+    .main_section-episodes_iframe-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

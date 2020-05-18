@@ -1,0 +1,30 @@
+.main_section-interviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_section-interviews_title {
+    margin: 54px vw(16, 320) 14px;
+    @include font(36, 42);
+}
+
+.main_section-interviews_images-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main_section-interviews_image {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 1440px) {
+    .main_section-interviews_title {
+        margin: vw(64, 14405) 0 vw(36, 1440) vw(200, 1440);
+        @include font(48, 62);
+    }
+    .main_section-interviews_image {
+        width: calc(100vw/3);
+    }
+}
