@@ -16,16 +16,19 @@
     margin: 0 vw(11, 320) vw(132.5, 320);
     & div {
         margin-bottom: 11px;
+        & iframe {
+            width: 100%;
+        }
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
     .main_section-episodes {
-        clip-path: polygon( 0 15%, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon( 0 8%, 100% 0, 100% 92%, 0 100%);
     }
     .main_section-episodes_title {
-        @include font(48, 62);
-        margin: vw(186, 1440) 0 vw(26, 1440) vw(200, 1440);
+        margin-top: 80px;
+        margin-left: vw(200, 1440);
     }
     .main_section-episodes_iframe-container {
         display: flex;
@@ -34,11 +37,28 @@
         justify-content: space-between;
         align-content: space-between;
         margin: 0 vw(100, 1440) vw(232.6, 1440);
-        height: vw(536, 1440);
+        height: 500px;
         & div {
             margin-bottom: 0;
+            width: 300px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main_section-episodes {
+        clip-path: polygon( 0 15%, 100% 0, 100% 85%, 0 100%);
+    }
+    .main_section-episodes_title {
+        @include font(48, 62);
+        margin: vw(186, 1440) 0 vw(26, 1440) vw(200, 1440);
+    }
+    .main_section-episodes_iframe-container {
+        height: 536px;
+        & div {
             width: vw(584, 1440);
-            height: vw(232, 1440);
+            height: 232px;
         }
     }
 }

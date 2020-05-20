@@ -36,7 +36,24 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
+    .header_container {
+        margin-left: vw(200, 1440);
+    }
+    .header_title {
+        @include font(48, 62);
+    }
+    .header_subtitle {
+        @include font(16, 24);
+        width: 500px;
+    }
+    .header_button {
+        width: 200px;
+        height: 48px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .header_container {
         margin: vw(120, 1440) 0 vw(5, 1440) vw(200, 1440);
     }
@@ -52,9 +69,8 @@
         color: $menu_color;
     }
     .header_subtitle {
-        @include font(16, 24);
         margin: 0 0 vw(56, 1440);
-        width: vw(628, 1440);
+        width: 628px;
         &-mobile {
             display: none;
         }
@@ -63,8 +79,8 @@
         }
     }
     .header_button {
-        width: vw(226, 1440);
-        height: vw(56, 1440);
+        width: 226px;
+        height: 56px;
         @include font(18, 24);
         &:hover {
             color: #FFFFFF;

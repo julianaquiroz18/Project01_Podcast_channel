@@ -72,11 +72,11 @@
     transform: rotate(-45deg) translate(-3px, 1px);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
     .navigation-bar {
         background-position: vw(100, 1440) vw(22, 1440);
-        background-size: vw(36, 1440) vw(36, 1440);
-        height: vw(80, 1440);
+        background-size: 36px, 36px;
+        height: 80px;
     }
     .navigation-bar_checkbox-menu,
     .navigation-bar_menu-line {

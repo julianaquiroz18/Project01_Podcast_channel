@@ -26,20 +26,30 @@
     color: $main_color;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
+    .main_section-news {
+        clip-path: polygon( 0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+    .main_section-news_button {
+        width: 400px;
+        height: 48px;
+        margin: 0 auto 67px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .main_section-news {
         clip-path: polygon( 0 30%, 100% 0, 100% 100%, 0 100%);
     }
     .main_section-news_title {
         @include font(48, 62);
         margin: vw(213, 1440) 0 36px;
-        text-align: center;
     }
     .main_section-news_button {
-        width: vw(345, 1440);
+        width: 345px;
         height: 56px;
         @include font(18, 24);
-        margin: 0 auto 151px;
+        margin: 0 auto vw(151, 1440);
         &:hover {
             color: #FFFFFF;
             background: $button_color_hover;
