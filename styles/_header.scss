@@ -34,6 +34,7 @@
     font-weight: 500;
     color: $main_color;
     text-decoration: none;
+    transition: all 0.3s linear;
 }
 
 @media screen and (min-width: 768px) {
