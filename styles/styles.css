@@ -106,9 +106,9 @@ video {
   position: absolute;
   margin: 0;
   left: 87.8125vw;
-  top: 13px;
-  width: 25px;
-  height: 20px;
+  top: 4.0625vw;
+  width: 7.8125vw;
+  height: 6.25vw;
   cursor: pointer;
   -webkit-transform-origin: 0px 0px;
           transform-origin: 0px 0px;
@@ -120,10 +120,10 @@ video {
   display: block;
   position: relative;
   left: 88.4375vw;
-  top: 16px;
-  width: 18px;
-  height: 2px;
-  margin-bottom: 3px;
+  top: 5vw;
+  width: 5.625vw;
+  height: 0.625vw;
+  margin-bottom: 0.9375vw;
   background: #000000;
   z-index: 1;
   -webkit-transform-origin: 0% 0%;
@@ -179,13 +179,13 @@ video {
 }
 
 .navigation-bar_checkbox-menu:checked ~ .navigation-bar_menu-line:nth-child(4) {
-  -webkit-transform: rotate(-45deg) translate(-3px, 1px);
-          transform: rotate(-45deg) translate(-3px, 1px);
+  -webkit-transform: rotate(-45deg) translate(-0.9375vw, 0.15625vw);
+          transform: rotate(-45deg) translate(-0.9375vw, 0.15625vw);
 }
 
 @media screen and (min-width: 768px) {
   .navigation-bar {
-    background-position: 6.94444vw 1.52778vw;
+    background-position: 6.94444vw 22px;
     background-size: 36px, 36px;
     height: 80px;
   }
@@ -208,8 +208,10 @@ video {
     padding-top: 0;
   }
   .navigation-bar_menu_item {
-    margin: 1.80556vw 0 1.80556vw 3.33333vw;
+    margin: 26px 0 26px 3.33333vw;
     color: #060A24;
+    -webkit-transition: all 0.05s linear;
+    transition: all 0.05s linear;
   }
   .navigation-bar_menu_item:hover {
     color: #00F3BB;
@@ -618,6 +620,7 @@ video {
   line-height: 32px;
   margin-top: 13px;
   font-weight: 600;
+  max-width: 288px;
 }
 
 @media screen and (min-width: 768px) {

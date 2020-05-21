@@ -28,6 +28,7 @@
     @include font(24, 32);
     margin-top: 13px;
     font-weight: 600;
+    max-width: 288px;
 }
 
 @media screen and (min-width: 768px) {
