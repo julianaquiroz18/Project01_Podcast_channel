@@ -12,10 +12,11 @@
 }
 
 .footer_icons-container {
-    width: 227px;
+    width: 230px;
     display: flex;
     justify-content: space-between;
-    & a {
+    & i {
+        @include font(16, 28);
         color: $main_color;
     }
 }
@@ -26,5 +27,14 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 0 vw(100, 1440);
+    }
+    .footer_title {
+        @include font(16, 28);
+    }
+    .footer_icons-container {
+        width: 232px;
+        & i {
+            @include font(18, 28);
+        }
     }
 }

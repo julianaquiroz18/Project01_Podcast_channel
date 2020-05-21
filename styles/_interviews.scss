@@ -15,8 +15,9 @@
 }
 
 .main_section-interviews_image {
-    width: 100%;
+    width: 100vw;
     height: auto;
+    align-self: flex-start;
 }
 
 @media screen and (min-width: 768px) {

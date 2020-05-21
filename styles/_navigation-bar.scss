@@ -1,5 +1,5 @@
 .navigation-bar {
-    background: url(../images/logo.svg) no-repeat vw(16, 320) vw(10, 320);
+    background: url("../images/logo.svg") no-repeat vw(16, 320) vw(10, 320);
     background-size: vw(24, 320) vw(24, 320);
     position: relative;
     height: vw(44, 320);
@@ -52,7 +52,8 @@
     text-decoration: none;
     color: #FFFFFF;
     @include second_font;
-    @include font(16, 28);
+    @include font(16,
+    28);
 }
 
 .navigation-bar_checkbox-menu:checked~.navigation-bar_menu {

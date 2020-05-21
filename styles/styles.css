@@ -92,10 +92,11 @@ video {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
   color: #060A24;
+  scroll-behavior: smooth;
 }
 
 .navigation-bar {
-  background: url(../images/logo.svg) no-repeat 5vw 3.125vw;
+  background: url("../images/logo.svg") no-repeat 5vw 3.125vw;
   background-size: 7.5vw 7.5vw;
   position: relative;
   height: 13.75vw;
@@ -542,8 +543,10 @@ video {
 }
 
 .main_section-interviews_image {
-  width: 100%;
+  width: 100vw;
   height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 @media screen and (min-width: 768px) {
@@ -812,7 +815,7 @@ video {
 }
 
 .footer_icons-container {
-  width: 227px;
+  width: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,7 +824,9 @@ video {
           justify-content: space-between;
 }
 
-.footer_icons-container a {
+.footer_icons-container i {
+  font-size: 16px;
+  line-height: 28px;
   color: #060A24;
 }
 
@@ -836,6 +841,17 @@ video {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0 6.94444vw;
+  }
+  .footer_title {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .footer_icons-container {
+    width: 232px;
+  }
+  .footer_icons-container i {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
