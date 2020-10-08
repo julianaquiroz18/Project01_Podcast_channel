@@ -10,7 +10,7 @@ You can see the project and listen the podcasts [here](https://julianaquiroz18.g
 
 ## The challenge
 
-The challenge is focused on the layout of Podcast Channel landing page, following the visual guides of 
+The challenge was focused on the layout of Podcast Channel landing page, following the visual guides of 
 the providen user interface and developing content, playback and navigation functionalities, also including
 compatibility with multiple browsers and devices.
 
